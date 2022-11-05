@@ -312,40 +312,40 @@ namespace WinFormsApp1
             this.reloadAll();
         }
 
-        private void createTenantFromDashboard_Click(object sender, EventArgs e)
+        private void createTenantFromDashboard_Click_1(object sender, EventArgs e)
         {
             CreateNewTenant form = new();
             form.onCreate += new EventHandler(performDataReload);
             form.ShowDialog();
         }
 
-        private void viewTenantFromDashboard_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedIndex = 1;  
-        }
-
-        private void createApartmentFromDashboard_Click(object sender, EventArgs e)
+        private void createApartmentFromDashboard_Click_1(object sender, EventArgs e)
         {
             CreateNewApartment form = new();
             form.onCreate += new EventHandler(performDataReload);
             form.ShowDialog();
         }
 
-        private void viewApartmentFromDashboard_Click(object sender, EventArgs e)
+        private void viewTenantFromDashboard_Click_1(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 2;
+            tabControl1.SelectedIndex = 1;
         }
 
-        private void createLeaseFromDashboard_Click(object sender, EventArgs e)
+        private void createLeaseFromDashboard_Click_1(object sender, EventArgs e)
         {
             CreateNewLease form = new();
             form.onCreate += new EventHandler(performDataReload);
             form.ShowDialog();
         }
 
-        private void viewLeaseFromDashboard_Click(object sender, EventArgs e)
+        private void viewLeaseFromDashboard_Click_1(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 3;
+        }
+
+        private void viewApartmentFromDashboard_Click_1(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 2;
         }
     }
 }

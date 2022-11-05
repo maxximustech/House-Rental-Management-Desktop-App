@@ -30,9 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tenantNameInput = new MaterialSkin.Controls.MaterialTextBox();
-            this.tenantGenderInput = new MaterialSkin.Controls.MaterialComboBox();
-            this.createTenantBtn = new MaterialSkin.Controls.MaterialButton();
+            this.tenantNameInput = new System.Windows.Forms.TextBox();
+            this.tenantGenderInput = new System.Windows.Forms.ComboBox();
+            this.createTenantBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +49,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(45, 150);
+            this.label2.Location = new System.Drawing.Point(45, 154);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 21);
             this.label2.TabIndex = 1;
@@ -57,68 +57,40 @@
             // 
             // tenantNameInput
             // 
-            this.tenantNameInput.AnimateReadOnly = false;
-            this.tenantNameInput.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tenantNameInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tenantNameInput.Depth = 0;
-            this.tenantNameInput.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.tenantNameInput.LeadingIcon = null;
+            this.tenantNameInput.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tenantNameInput.Location = new System.Drawing.Point(45, 79);
-            this.tenantNameInput.MaxLength = 50;
-            this.tenantNameInput.MouseState = MaterialSkin.MouseState.OUT;
-            this.tenantNameInput.Multiline = false;
             this.tenantNameInput.Name = "tenantNameInput";
-            this.tenantNameInput.Size = new System.Drawing.Size(390, 50);
-            this.tenantNameInput.TabIndex = 4;
-            this.tenantNameInput.Text = "";
-            this.tenantNameInput.TrailingIcon = null;
+            this.tenantNameInput.Size = new System.Drawing.Size(390, 36);
+            this.tenantNameInput.TabIndex = 0;
             // 
             // tenantGenderInput
             // 
-            this.tenantGenderInput.AutoResize = false;
-            this.tenantGenderInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.tenantGenderInput.Depth = 0;
-            this.tenantGenderInput.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.tenantGenderInput.DropDownHeight = 174;
-            this.tenantGenderInput.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.tenantGenderInput.DropDownWidth = 121;
-            this.tenantGenderInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.tenantGenderInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.tenantGenderInput.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tenantGenderInput.FormattingEnabled = true;
-            this.tenantGenderInput.IntegralHeight = false;
-            this.tenantGenderInput.ItemHeight = 43;
+            this.tenantGenderInput.ItemHeight = 30;
             this.tenantGenderInput.Items.AddRange(new object[] {
             "",
             "Male",
             "Female"});
-            this.tenantGenderInput.Location = new System.Drawing.Point(45, 174);
-            this.tenantGenderInput.MaxDropDownItems = 4;
-            this.tenantGenderInput.MouseState = MaterialSkin.MouseState.OUT;
+            this.tenantGenderInput.Location = new System.Drawing.Point(45, 180);
+            this.tenantGenderInput.MinimumSize = new System.Drawing.Size(390, 0);
             this.tenantGenderInput.Name = "tenantGenderInput";
-            this.tenantGenderInput.Size = new System.Drawing.Size(390, 49);
-            this.tenantGenderInput.StartIndex = 0;
-            this.tenantGenderInput.TabIndex = 5;
+            this.tenantGenderInput.Size = new System.Drawing.Size(390, 38);
+            this.tenantGenderInput.TabIndex = 1;
             // 
             // createTenantBtn
             // 
-            this.createTenantBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.createTenantBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.createTenantBtn.Depth = 0;
-            this.createTenantBtn.HighEmphasis = true;
-            this.createTenantBtn.Icon = null;
-            this.createTenantBtn.Location = new System.Drawing.Point(359, 252);
-            this.createTenantBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.createTenantBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.createTenantBtn.BackColor = System.Drawing.SystemColors.Highlight;
+            this.createTenantBtn.FlatAppearance.BorderSize = 0;
+            this.createTenantBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.createTenantBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.createTenantBtn.Location = new System.Drawing.Point(331, 253);
             this.createTenantBtn.Name = "createTenantBtn";
-            this.createTenantBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.createTenantBtn.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.createTenantBtn.Size = new System.Drawing.Size(76, 36);
-            this.createTenantBtn.TabIndex = 6;
+            this.createTenantBtn.Size = new System.Drawing.Size(104, 33);
+            this.createTenantBtn.TabIndex = 2;
             this.createTenantBtn.Text = "Create";
-            this.createTenantBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.createTenantBtn.UseAccentColor = false;
-            this.createTenantBtn.UseVisualStyleBackColor = true;
-            this.createTenantBtn.Click += new System.EventHandler(this.createTenantBtn_Click);
+            this.createTenantBtn.UseVisualStyleBackColor = false;
+            this.createTenantBtn.Click += new System.EventHandler(this.createTenantBtn_Click_1);
             // 
             // CreateNewTenant
             // 
@@ -144,8 +116,8 @@
         #endregion
         private Label label1;
         private Label label2;
-        private MaterialSkin.Controls.MaterialTextBox tenantNameInput;
-        private MaterialSkin.Controls.MaterialComboBox tenantGenderInput;
-        private MaterialSkin.Controls.MaterialButton createTenantBtn;
+        private TextBox tenantNameInput;
+        private ComboBox tenantGenderInput;
+        private Button createTenantBtn;
     }
 }

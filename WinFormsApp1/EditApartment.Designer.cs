@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.editApartmentBtn = new MaterialSkin.Controls.MaterialButton();
-            this.apartmentStatusInput = new MaterialSkin.Controls.MaterialComboBox();
-            this.apartmentNoInput = new MaterialSkin.Controls.MaterialTextBox();
-            this.apartmentNameInput = new MaterialSkin.Controls.MaterialTextBox();
+            this.editApartmentBtn = new System.Windows.Forms.Button();
+            this.apartmentStatusInput = new System.Windows.Forms.ComboBox();
+            this.apartmentNoInput = new System.Windows.Forms.TextBox();
+            this.apartmentNameInput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,114 +39,76 @@
             // 
             // editApartmentBtn
             // 
-            this.editApartmentBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.editApartmentBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.editApartmentBtn.Depth = 0;
-            this.editApartmentBtn.HighEmphasis = true;
-            this.editApartmentBtn.Icon = null;
-            this.editApartmentBtn.Location = new System.Drawing.Point(361, 316);
-            this.editApartmentBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.editApartmentBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.editApartmentBtn.BackColor = System.Drawing.SystemColors.Highlight;
+            this.editApartmentBtn.FlatAppearance.BorderSize = 0;
+            this.editApartmentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editApartmentBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.editApartmentBtn.Location = new System.Drawing.Point(333, 315);
             this.editApartmentBtn.Name = "editApartmentBtn";
-            this.editApartmentBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.editApartmentBtn.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.editApartmentBtn.Size = new System.Drawing.Size(77, 36);
-            this.editApartmentBtn.TabIndex = 18;
-            this.editApartmentBtn.Text = "Update";
-            this.editApartmentBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.editApartmentBtn.UseAccentColor = false;
-            this.editApartmentBtn.UseVisualStyleBackColor = true;
-            this.editApartmentBtn.Click += new System.EventHandler(this.editApartmentBtn_Click);
+            this.editApartmentBtn.Size = new System.Drawing.Size(104, 33);
+            this.editApartmentBtn.TabIndex = 3;
+            this.editApartmentBtn.Text = "Edit";
+            this.editApartmentBtn.UseVisualStyleBackColor = false;
+            this.editApartmentBtn.Click += new System.EventHandler(this.editApartmentBtn_Click_1);
             // 
             // apartmentStatusInput
             // 
-            this.apartmentStatusInput.AutoResize = false;
-            this.apartmentStatusInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.apartmentStatusInput.Depth = 0;
-            this.apartmentStatusInput.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.apartmentStatusInput.DropDownHeight = 174;
-            this.apartmentStatusInput.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.apartmentStatusInput.DropDownWidth = 121;
-            this.apartmentStatusInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.apartmentStatusInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.apartmentStatusInput.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.apartmentStatusInput.FormattingEnabled = true;
-            this.apartmentStatusInput.IntegralHeight = false;
-            this.apartmentStatusInput.ItemHeight = 43;
+            this.apartmentStatusInput.ItemHeight = 30;
             this.apartmentStatusInput.Items.AddRange(new object[] {
             "Available",
             "Unavailable"});
-            this.apartmentStatusInput.Location = new System.Drawing.Point(47, 238);
-            this.apartmentStatusInput.MaxDropDownItems = 4;
-            this.apartmentStatusInput.MouseState = MaterialSkin.MouseState.OUT;
+            this.apartmentStatusInput.Location = new System.Drawing.Point(47, 243);
+            this.apartmentStatusInput.MinimumSize = new System.Drawing.Size(390, 0);
             this.apartmentStatusInput.Name = "apartmentStatusInput";
-            this.apartmentStatusInput.Size = new System.Drawing.Size(390, 49);
-            this.apartmentStatusInput.StartIndex = 2;
-            this.apartmentStatusInput.TabIndex = 17;
+            this.apartmentStatusInput.Size = new System.Drawing.Size(390, 38);
+            this.apartmentStatusInput.TabIndex = 2;
             // 
             // apartmentNoInput
             // 
-            this.apartmentNoInput.AnimateReadOnly = false;
-            this.apartmentNoInput.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.apartmentNoInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.apartmentNoInput.Depth = 0;
-            this.apartmentNoInput.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.apartmentNoInput.LeadingIcon = null;
-            this.apartmentNoInput.Location = new System.Drawing.Point(47, 151);
-            this.apartmentNoInput.MaxLength = 50;
-            this.apartmentNoInput.MouseState = MaterialSkin.MouseState.OUT;
-            this.apartmentNoInput.Multiline = false;
+            this.apartmentNoInput.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.apartmentNoInput.Location = new System.Drawing.Point(47, 156);
             this.apartmentNoInput.Name = "apartmentNoInput";
-            this.apartmentNoInput.Size = new System.Drawing.Size(390, 50);
-            this.apartmentNoInput.TabIndex = 13;
-            this.apartmentNoInput.Text = "";
-            this.apartmentNoInput.TrailingIcon = null;
+            this.apartmentNoInput.Size = new System.Drawing.Size(390, 36);
+            this.apartmentNoInput.TabIndex = 1;
             // 
             // apartmentNameInput
             // 
-            this.apartmentNameInput.AnimateReadOnly = false;
-            this.apartmentNameInput.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.apartmentNameInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.apartmentNameInput.Depth = 0;
-            this.apartmentNameInput.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.apartmentNameInput.LeadingIcon = null;
-            this.apartmentNameInput.Location = new System.Drawing.Point(47, 62);
-            this.apartmentNameInput.MaxLength = 50;
-            this.apartmentNameInput.MouseState = MaterialSkin.MouseState.OUT;
-            this.apartmentNameInput.Multiline = false;
+            this.apartmentNameInput.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.apartmentNameInput.Location = new System.Drawing.Point(47, 67);
             this.apartmentNameInput.Name = "apartmentNameInput";
-            this.apartmentNameInput.Size = new System.Drawing.Size(390, 50);
-            this.apartmentNameInput.TabIndex = 12;
-            this.apartmentNameInput.Text = "";
-            this.apartmentNameInput.TrailingIcon = null;
+            this.apartmentNameInput.Size = new System.Drawing.Size(390, 36);
+            this.apartmentNameInput.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(47, 214);
+            this.label2.Location = new System.Drawing.Point(47, 219);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 21);
-            this.label2.TabIndex = 14;
+            this.label2.TabIndex = 16;
             this.label2.Text = "Status";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(47, 127);
+            this.label3.Location = new System.Drawing.Point(47, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 21);
-            this.label3.TabIndex = 15;
+            this.label3.TabIndex = 17;
             this.label3.Text = "Apartment number";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(47, 38);
+            this.label1.Location = new System.Drawing.Point(47, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 21);
-            this.label1.TabIndex = 16;
+            this.label1.TabIndex = 18;
             this.label1.Text = "Apartment name";
             // 
             // EditApartment
@@ -171,10 +133,10 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialButton editApartmentBtn;
-        private MaterialSkin.Controls.MaterialComboBox apartmentStatusInput;
-        private MaterialSkin.Controls.MaterialTextBox apartmentNoInput;
-        private MaterialSkin.Controls.MaterialTextBox apartmentNameInput;
+        private Button editApartmentBtn;
+        private ComboBox apartmentStatusInput;
+        private TextBox apartmentNoInput;
+        private TextBox apartmentNameInput;
         private Label label2;
         private Label label3;
         private Label label1;

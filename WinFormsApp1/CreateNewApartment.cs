@@ -18,7 +18,9 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void createApartmentBtn_Click(object sender, EventArgs e)
+        public event EventHandler onCreate;
+
+        private void createApartmentBtn_Click_1(object sender, EventArgs e)
         {
             string name = apartmentNameInput.Text.Trim();
             string apartNo = apartmentNoInput.Text.Trim();
@@ -39,6 +41,5 @@ namespace WinFormsApp1
             }
             this.Enabled = true;
         }
-        public event EventHandler onCreate;
     }
 }

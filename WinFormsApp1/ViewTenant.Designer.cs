@@ -32,7 +32,7 @@
             this.tenantName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tenantGender = new System.Windows.Forms.Label();
-            this.editTenant = new MaterialSkin.Controls.MaterialButton();
+            this.editTenant = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,23 +77,17 @@
             // 
             // editTenant
             // 
-            this.editTenant.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.editTenant.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.editTenant.Depth = 0;
-            this.editTenant.HighEmphasis = true;
-            this.editTenant.Icon = null;
-            this.editTenant.Location = new System.Drawing.Point(356, 262);
-            this.editTenant.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.editTenant.MouseState = MaterialSkin.MouseState.HOVER;
+            this.editTenant.BackColor = System.Drawing.SystemColors.Highlight;
+            this.editTenant.FlatAppearance.BorderSize = 0;
+            this.editTenant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editTenant.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.editTenant.Location = new System.Drawing.Point(315, 268);
             this.editTenant.Name = "editTenant";
-            this.editTenant.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.editTenant.Size = new System.Drawing.Size(64, 36);
-            this.editTenant.TabIndex = 3;
+            this.editTenant.Size = new System.Drawing.Size(104, 33);
+            this.editTenant.TabIndex = 10;
             this.editTenant.Text = "Edit";
-            this.editTenant.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.editTenant.UseAccentColor = false;
-            this.editTenant.UseVisualStyleBackColor = true;
-            this.editTenant.Click += new System.EventHandler(this.editTenant_Click);
+            this.editTenant.UseVisualStyleBackColor = false;
+            this.editTenant.Click += new System.EventHandler(this.editTenant_Click_1);
             // 
             // ViewTenant
             // 
@@ -119,6 +113,6 @@
         private Label tenantName;
         private Label label2;
         private Label tenantGender;
-        private MaterialSkin.Controls.MaterialButton editTenant;
+        private Button editTenant;
     }
 }

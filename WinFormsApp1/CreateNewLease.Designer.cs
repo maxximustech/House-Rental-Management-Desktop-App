@@ -28,36 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.leaseApartmentIdInput = new MaterialSkin.Controls.MaterialTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.leaseTenantIdInput = new MaterialSkin.Controls.MaterialTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.leasePriceInput = new MaterialSkin.Controls.MaterialTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.leaseTransactionRefInput = new MaterialSkin.Controls.MaterialTextBox();
-            this.leaseValidTillInput = new MetroFramework.Controls.MetroDateTime();
             this.label5 = new System.Windows.Forms.Label();
-            this.createTenantBtn = new MaterialSkin.Controls.MaterialButton();
+            this.leaseApartmentIdInput = new System.Windows.Forms.TextBox();
+            this.leaseTenantIdInput = new System.Windows.Forms.TextBox();
+            this.leasePriceInput = new System.Windows.Forms.TextBox();
+            this.leaseTransactionRefInput = new System.Windows.Forms.TextBox();
+            this.leaseValidTillInput = new System.Windows.Forms.DateTimePicker();
+            this.createTenantBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // leaseApartmentIdInput
-            // 
-            this.leaseApartmentIdInput.AnimateReadOnly = false;
-            this.leaseApartmentIdInput.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.leaseApartmentIdInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.leaseApartmentIdInput.Depth = 0;
-            this.leaseApartmentIdInput.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.leaseApartmentIdInput.LeadingIcon = null;
-            this.leaseApartmentIdInput.Location = new System.Drawing.Point(69, 95);
-            this.leaseApartmentIdInput.MaxLength = 50;
-            this.leaseApartmentIdInput.MouseState = MaterialSkin.MouseState.OUT;
-            this.leaseApartmentIdInput.Multiline = false;
-            this.leaseApartmentIdInput.Name = "leaseApartmentIdInput";
-            this.leaseApartmentIdInput.Size = new System.Drawing.Size(302, 50);
-            this.leaseApartmentIdInput.TabIndex = 0;
-            this.leaseApartmentIdInput.Text = "";
-            this.leaseApartmentIdInput.TrailingIcon = null;
             // 
             // label1
             // 
@@ -79,24 +61,6 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Tenant ID";
             // 
-            // leaseTenantIdInput
-            // 
-            this.leaseTenantIdInput.AnimateReadOnly = false;
-            this.leaseTenantIdInput.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.leaseTenantIdInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.leaseTenantIdInput.Depth = 0;
-            this.leaseTenantIdInput.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.leaseTenantIdInput.LeadingIcon = null;
-            this.leaseTenantIdInput.Location = new System.Drawing.Point(411, 95);
-            this.leaseTenantIdInput.MaxLength = 50;
-            this.leaseTenantIdInput.MouseState = MaterialSkin.MouseState.OUT;
-            this.leaseTenantIdInput.Multiline = false;
-            this.leaseTenantIdInput.Name = "leaseTenantIdInput";
-            this.leaseTenantIdInput.Size = new System.Drawing.Size(318, 50);
-            this.leaseTenantIdInput.TabIndex = 1;
-            this.leaseTenantIdInput.Text = "";
-            this.leaseTenantIdInput.TrailingIcon = null;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -106,24 +70,6 @@
             this.label3.Size = new System.Drawing.Size(67, 21);
             this.label3.TabIndex = 5;
             this.label3.Text = "Price ($)";
-            // 
-            // leasePriceInput
-            // 
-            this.leasePriceInput.AnimateReadOnly = false;
-            this.leasePriceInput.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.leasePriceInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.leasePriceInput.Depth = 0;
-            this.leasePriceInput.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.leasePriceInput.LeadingIcon = null;
-            this.leasePriceInput.Location = new System.Drawing.Point(69, 208);
-            this.leasePriceInput.MaxLength = 50;
-            this.leasePriceInput.MouseState = MaterialSkin.MouseState.OUT;
-            this.leasePriceInput.Multiline = false;
-            this.leasePriceInput.Name = "leasePriceInput";
-            this.leasePriceInput.Size = new System.Drawing.Size(302, 50);
-            this.leasePriceInput.TabIndex = 2;
-            this.leasePriceInput.Text = "";
-            this.leasePriceInput.TrailingIcon = null;
             // 
             // label4
             // 
@@ -135,32 +81,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Transaction Reference";
             // 
-            // leaseTransactionRefInput
-            // 
-            this.leaseTransactionRefInput.AnimateReadOnly = false;
-            this.leaseTransactionRefInput.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.leaseTransactionRefInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.leaseTransactionRefInput.Depth = 0;
-            this.leaseTransactionRefInput.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.leaseTransactionRefInput.LeadingIcon = null;
-            this.leaseTransactionRefInput.Location = new System.Drawing.Point(411, 208);
-            this.leaseTransactionRefInput.MaxLength = 50;
-            this.leaseTransactionRefInput.MouseState = MaterialSkin.MouseState.OUT;
-            this.leaseTransactionRefInput.Multiline = false;
-            this.leaseTransactionRefInput.Name = "leaseTransactionRefInput";
-            this.leaseTransactionRefInput.Size = new System.Drawing.Size(318, 50);
-            this.leaseTransactionRefInput.TabIndex = 3;
-            this.leaseTransactionRefInput.Text = "";
-            this.leaseTransactionRefInput.TrailingIcon = null;
-            // 
-            // leaseValidTillInput
-            // 
-            this.leaseValidTillInput.Location = new System.Drawing.Point(69, 326);
-            this.leaseValidTillInput.MinimumSize = new System.Drawing.Size(0, 29);
-            this.leaseValidTillInput.Name = "leaseValidTillInput";
-            this.leaseValidTillInput.Size = new System.Drawing.Size(302, 29);
-            this.leaseValidTillInput.TabIndex = 4;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -171,26 +91,59 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Expires";
             // 
+            // leaseApartmentIdInput
+            // 
+            this.leaseApartmentIdInput.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leaseApartmentIdInput.Location = new System.Drawing.Point(69, 95);
+            this.leaseApartmentIdInput.Name = "leaseApartmentIdInput";
+            this.leaseApartmentIdInput.Size = new System.Drawing.Size(302, 36);
+            this.leaseApartmentIdInput.TabIndex = 0;
+            // 
+            // leaseTenantIdInput
+            // 
+            this.leaseTenantIdInput.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leaseTenantIdInput.Location = new System.Drawing.Point(411, 95);
+            this.leaseTenantIdInput.Name = "leaseTenantIdInput";
+            this.leaseTenantIdInput.Size = new System.Drawing.Size(318, 36);
+            this.leaseTenantIdInput.TabIndex = 1;
+            // 
+            // leasePriceInput
+            // 
+            this.leasePriceInput.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leasePriceInput.Location = new System.Drawing.Point(69, 208);
+            this.leasePriceInput.Name = "leasePriceInput";
+            this.leasePriceInput.Size = new System.Drawing.Size(302, 36);
+            this.leasePriceInput.TabIndex = 2;
+            // 
+            // leaseTransactionRefInput
+            // 
+            this.leaseTransactionRefInput.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leaseTransactionRefInput.Location = new System.Drawing.Point(411, 208);
+            this.leaseTransactionRefInput.Name = "leaseTransactionRefInput";
+            this.leaseTransactionRefInput.Size = new System.Drawing.Size(318, 36);
+            this.leaseTransactionRefInput.TabIndex = 3;
+            // 
+            // leaseValidTillInput
+            // 
+            this.leaseValidTillInput.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leaseValidTillInput.Location = new System.Drawing.Point(69, 326);
+            this.leaseValidTillInput.Name = "leaseValidTillInput";
+            this.leaseValidTillInput.Size = new System.Drawing.Size(302, 36);
+            this.leaseValidTillInput.TabIndex = 4;
+            // 
             // createTenantBtn
             // 
-            this.createTenantBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.createTenantBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.createTenantBtn.Depth = 0;
-            this.createTenantBtn.HighEmphasis = true;
-            this.createTenantBtn.Icon = null;
+            this.createTenantBtn.BackColor = System.Drawing.SystemColors.Highlight;
+            this.createTenantBtn.FlatAppearance.BorderSize = 0;
+            this.createTenantBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.createTenantBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.createTenantBtn.Location = new System.Drawing.Point(411, 326);
-            this.createTenantBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.createTenantBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.createTenantBtn.Name = "createTenantBtn";
-            this.createTenantBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.createTenantBtn.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.createTenantBtn.Size = new System.Drawing.Size(76, 36);
+            this.createTenantBtn.Size = new System.Drawing.Size(104, 33);
             this.createTenantBtn.TabIndex = 5;
             this.createTenantBtn.Text = "Create";
-            this.createTenantBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.createTenantBtn.UseAccentColor = false;
-            this.createTenantBtn.UseVisualStyleBackColor = true;
-            this.createTenantBtn.Click += new System.EventHandler(this.createTenantBtn_Click);
+            this.createTenantBtn.UseVisualStyleBackColor = false;
+            this.createTenantBtn.Click += new System.EventHandler(this.createTenantBtn_Click_1);
             // 
             // CreateNewLease
             // 
@@ -199,14 +152,14 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.createTenantBtn);
             this.Controls.Add(this.leaseValidTillInput);
-            this.Controls.Add(this.leaseTransactionRefInput);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.leaseTenantIdInput);
+            this.Controls.Add(this.leaseTransactionRefInput);
             this.Controls.Add(this.leasePriceInput);
+            this.Controls.Add(this.leaseApartmentIdInput);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.leaseApartmentIdInput);
             this.Controls.Add(this.label1);
             this.Name = "CreateNewLease";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -217,17 +170,16 @@
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialTextBox leaseApartmentIdInput;
         private Label label1;
         private Label label2;
-        private MaterialSkin.Controls.MaterialTextBox leaseTenantIdInput;
         private Label label3;
-        private MaterialSkin.Controls.MaterialTextBox leasePriceInput;
         private Label label4;
-        private MaterialSkin.Controls.MaterialTextBox leaseTransactionRefInput;
-        private MetroFramework.Controls.MetroDateTime leaseValidTillInput;
         private Label label5;
-        private MaterialSkin.Controls.MaterialButton createTenantBtn;
+        private TextBox leaseApartmentIdInput;
+        private TextBox leaseTenantIdInput;
+        private TextBox leasePriceInput;
+        private TextBox leaseTransactionRefInput;
+        private DateTimePicker leaseValidTillInput;
+        private Button createTenantBtn;
     }
 }

@@ -19,18 +19,25 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void createTenantBtn_Click(object sender, EventArgs e)
+
+        private void CreateNewTenant_Load(object sender, EventArgs e)
+        {
+
+        }
+        public event EventHandler onCreate;
+
+        private void createTenantBtn_Click_1(object sender, EventArgs e)
         {
             string fullName = tenantNameInput.Text.Trim();
             string gender = tenantGenderInput.Text.Trim();
-            Tenant tenant = new Tenant(0,fullName,gender);
+            Tenant tenant = new Tenant(0, fullName, gender);
             this.Enabled = false;
             if (tenant.Create())
             {
                 tenantNameInput.Text = "";
                 tenantGenderInput.SelectedIndex = 0;
                 EventHandler handler = this.onCreate;
-                if(handler != null)
+                if (handler != null)
                 {
                     handler(this, new EventArgs());
                 }
@@ -38,11 +45,5 @@ namespace WinFormsApp1
             }
             this.Enabled = true;
         }
-
-        private void CreateNewTenant_Load(object sender, EventArgs e)
-        {
-
-        }
-        public event EventHandler onCreate;
     }
 }

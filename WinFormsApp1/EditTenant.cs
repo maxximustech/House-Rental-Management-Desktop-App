@@ -38,7 +38,9 @@ namespace WinFormsApp1
             
         }
 
-        private void editTenantBtn_Click(object sender, EventArgs e)
+        public event EventHandler? onUpdate;
+
+        private void editTenantBtn_Click_1(object sender, EventArgs e)
         {
             string fullName = tenantNameInput.Text.Trim();
             string gender = tenantGenderInput.Text.Trim();
@@ -55,6 +57,5 @@ namespace WinFormsApp1
             }
             this.Enabled = true;
         }
-        public event EventHandler? onUpdate;
     }
 }

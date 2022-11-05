@@ -31,7 +31,7 @@ namespace WinFormsApp1
             this.Enabled = true;
         }
 
-        private void editTenant_Click(object sender, EventArgs e)
+        private void editTenant_Click_1(object sender, EventArgs e)
         {
             EditApartment form = new(apartment.Id);
             form.ShowDialog();

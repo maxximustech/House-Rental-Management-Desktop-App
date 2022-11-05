@@ -18,7 +18,30 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void createTenantBtn_Click(object sender, EventArgs e)
+        private void createRecord(object sender, EventArgs e)
+        {
+            this.Enabled = false;
+            var apartmentId = leaseApartmentIdInput.Text.Trim();
+            var tenantId = leaseTenantIdInput.Text.Trim();
+            var price = leasePriceInput.Text.Trim();
+            var transactionRef = leaseTransactionRefInput.Text.Trim();
+            var validTill = leaseValidTillInput.Value;
+            Lease lease = new Lease("", apartmentId, tenantId, price, transactionRef, validTill);
+            if (lease.Create())
+            {
+                new EventHandler(onCreate)?.Invoke(this, new EventArgs());
+                leaseApartmentIdInput.Text = "";
+                leaseTenantIdInput.Text = "";
+                leasePriceInput.Text = "";
+                leaseTransactionRefInput.Text = "";
+                leaseValidTillInput.Value = DateTime.Now;
+                MessageBox.Show("Lease record created successfully!");
+            }
+            this.Enabled = true;
+        }
+        public event EventHandler? onCreate;
+
+        private void createTenantBtn_Click_1(object sender, EventArgs e)
         {
             var apartmentId = leaseApartmentIdInput.Text.Trim();
             var tenantId = leaseTenantIdInput.Text.Trim();
@@ -54,27 +77,5 @@ namespace WinFormsApp1
             form.onAccept += new EventHandler(createRecord);
             form.ShowDialog();
         }
-        private void createRecord(object sender, EventArgs e)
-        {
-            this.Enabled = false;
-            var apartmentId = leaseApartmentIdInput.Text.Trim();
-            var tenantId = leaseTenantIdInput.Text.Trim();
-            var price = leasePriceInput.Text.Trim();
-            var transactionRef = leaseTransactionRefInput.Text.Trim();
-            var validTill = leaseValidTillInput.Value;
-            Lease lease = new Lease("",apartmentId,tenantId,price,transactionRef,validTill);
-            if (lease.Create())
-            {
-                new EventHandler(onCreate)?.Invoke(this, new EventArgs());
-                leaseApartmentIdInput.Text = "";
-                leaseTenantIdInput.Text = "";
-                leasePriceInput.Text = "";
-                leaseTransactionRefInput.Text = "";
-                leaseValidTillInput.Value = DateTime.Now;
-                MessageBox.Show("Lease record created successfully!");
-            }
-            this.Enabled = true;
-        }
-        public event EventHandler? onCreate;
     }
 }
